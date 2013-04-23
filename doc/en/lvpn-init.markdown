@@ -14,7 +14,7 @@ Nodes are stored on the $LVPN\_DIR/nodos/ directory
     -c  ConnectTo
 
 Usage: 
-lvpn init [-f] [-v] [-p 655] [-l 192.168.9.202/32] [-s 10.4.24.128/27] [-r] [-a dominio.eninternet.tld] [-c otronodo] nodo 
+lvpn init [-f] [-v] [-p 655] [-l 10.26.1.202/32] [-s 10.4.24.128/27] [-r] [-a dominio.eninternet.tld] [-c otronodo] nodo 
 
 Examples:
 * Basic usage with only one connection
@@ -27,7 +27,7 @@ Examples:
 
 * Create a node with a given IP address
 
-  lvpn init -l 192.168.9.202/32 guachiguau
+  lvpn init -l 10.26.1.202/32 guachiguau
 
 * Create a node that can access other networks
 

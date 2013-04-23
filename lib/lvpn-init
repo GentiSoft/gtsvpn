@@ -44,7 +44,7 @@ get_ip() {
     until [ -n "${ip}" ]; do
         let fourth=${RANDOM}%250
 # TODO no hardcodear el rango
-        local tmpip="192.168.9.${fourth}/32"
+        local tmpip="10.26.1.${fourth}/32"
 
 # Está en la lista?
         if ! grep -q "${tmpip}" "${subnets}"; then
@@ -170,8 +170,5 @@ cp "${nodefile}" "${LVPN_HOSTS}"
 $install && ${LVPN} install ${nodename}
 
 msg "El nodo se ha creado con éxito"
-msg "*Importante*: "
-msg "* Envíe el archivo que representa su nodo a vpn@hackcoop.com.ar (%s), o" "${nodefile}"
-msg "* Agregue %s al repositorio git y publíquelo." "${nodefile}"
 
 exit 0
