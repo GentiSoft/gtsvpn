@@ -1,2 +1,4 @@
 rsa_key.priv
 nodos
+hosts/*
+!hosts/leer.txt
