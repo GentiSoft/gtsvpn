@@ -11,7 +11,7 @@ connectto=""
 # Address
 address=""
 # Port
-port="2699"
+port="2665"
 # Subnets extra (-s)
 subnets=""
 # Instalar
@@ -152,6 +152,7 @@ $verbose && msg "Este nodo es un %s" "${mode}"
 $verbose && msg "Generando %s..." "${conffile}"
 add_to_file "${conffile}" "Name = ${nodename}"
 add_to_file "${conffile}" "Mode = ${mode}"
+add_to_file "${conffile}" "Port = ${port}"
 
 $verbose && msg "Añadiendo hosts..."
 if [ -n "${connectto}" ]; then
