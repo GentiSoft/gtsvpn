@@ -6,4 +6,4 @@
 # Equivale al primer Subnet del archivo de host
 ip=$(cat /etc/tinc/${NETNAME}/ip.conf)
 
-ifconfig $INTERFACE $ip netmask 255.255.255.0
+ifconfig $INTERFACE $ip netmask 255.255.0.0

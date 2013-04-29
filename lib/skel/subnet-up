@@ -6,7 +6,7 @@
 # TODO sólo funciona con IPv4
 
 # Si encuentra estas cadenas en la subnet, no es necesario
-for not in ':' '10.26.1.'; do
+for not in ':' '10.26.'; do
     echo "$SUBNET" | grep "$not" >/dev/null 2>&1
     [ $? -eq 0 ] && exit 0
 done
