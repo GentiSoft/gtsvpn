@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 # Crea un nuevo nodo
 
-C
 . "${LVPN_LIBDIR}"/common
 
 requires tincd

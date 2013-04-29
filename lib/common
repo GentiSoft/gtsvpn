@@ -58,8 +58,6 @@ get_node_file() {
     echo "${file}"
 }
 
-if [ -d ${LVPN_DIR}/hosts ]; then
-    //
-else
+if [ ! -d ${LVPN_DIR}/hosts ]; then
     mkdir ${LVPN_DIR}/hosts
 fi
