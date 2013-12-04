@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>GtpVPN by GentiSoft</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>GtpVPN</h1>
+        <p>VPN based on  http://lab.hackcoop.com.ar/projects/librevpn for internal implementation</p>
+
+        <p class="view"><a href="https://github.com/GentiSoft/gtsvpn">View the Project on GitHub <small>GentiSoft/gtsvpn</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/GentiSoft/gtsvpn/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/GentiSoft/gtsvpn/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/GentiSoft/gtsvpn">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="gtsvpn" class="anchor" href="#gtsvpn"><span class="octicon octicon-link"></span></a>GtsVPN</h1>
+
+<p>GtsVPN es un fork de <a href="http://librevpn.com.ar">LibreVPN</a> pero para crear redes del rango 10.26.0.0/16. Está pensado para poder integrar maquinas dentro de subredes y así poder agilizar el trabajo, teniendo accesibles en una red virtual a todas ellas sin importar su ubicación geografica o física.</p>
+
+<p>Básicamente es una serie de scripts para configurar <a href="http://tinc-vpn.org">Tinc</a> de modo fácil, cada nodo tiene un par de llaves RSA y los que manejan la red tendrán el poder de decidir que máquina entra a la red y cual no.</p>
+
+<h2>
+<a name="descentralizada" class="anchor" href="#descentralizada"><span class="octicon octicon-link"></span></a>Descentralizada</h2>
+
+<p>Al utilizar Tinc, no se necesita de un server o <em>nodo</em> central, se pueden hacer todos los enlaces que sean necesarios sin necesidad de un servidor central.</p>
+
+<h2>
+<a name="segura" class="anchor" href="#segura"><span class="octicon octicon-link"></span></a>Segura</h2>
+
+<p>Además de que todo el tráfico viaja encriptado por ser una VPN, al usar subrangos de 10.26.x.x se pueden configurar firewalls y servicios para atender solo a cierta parte de la red por ejemplo.</p>
+
+<h2>
+<a name="libre-y-abierta" class="anchor" href="#libre-y-abierta"><span class="octicon octicon-link"></span></a>Libre y abierta</h2>
+
+<p>Al ser un fork de un proyecto libre, tanto el código como las discuciones se mantienen libres y abiertas para que cualquiera pueda participar del proyecto, para enviar errores/ideas, leer documentación y demás, se puede usar la página del proyecto en el tracker de GentiSoft:</p>
+
+<p><a href="https://redmine.gentisoft.com/projects/gtsnet">https://redmine.gentisoft.com/projects/gtsnet</a></p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/GentiSoft">GentiSoft</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
