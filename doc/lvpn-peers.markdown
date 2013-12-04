@@ -9,4 +9,4 @@ El demonio tincd debe iniciarse con la opción --logfile.
     -c  Contar los intentos de conexion
 
 Uso:
-    lvpn peers [/var/log/tinc.lvpn.log]
+    gtsvpn peers [/var/log/tinc.gtsvpn.log]

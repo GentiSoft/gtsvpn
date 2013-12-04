@@ -7,4 +7,4 @@ El daemon tincd debe iniciarse con *--logfile*.
 
 Uso:
 
-    lvpn d3 > data.json
+    gtsvpn d3 > data.json

@@ -1,4 +1,4 @@
-# lvpn-install
+# gtsvpn-install
 
 Instala o sincroniza el nodo en el sistema. Correr luego de cada cambio.
 
@@ -9,5 +9,5 @@ Instala o sincroniza el nodo en el sistema. Correr luego de cada cambio.
 
 Uso:
 
-  lvpn install [-hvd] nombre_de_nodo
+  gtsvpn install [-hvd] nombre_de_nodo
 

@@ -7,9 +7,9 @@ con OpenWRT.
 Necesita acceso SSH.
 
 Uso:
-lvpn push nodo user@host [directorio de tinc]
+gtsvpn push nodo user@host [directorio de tinc]
 
 Ejemplos:
 
 * Sincronizar un nodo
-  lvpn push guachiguau root@10.4.23.225
+  gtsvpn push guachiguau root@10.4.23.225
