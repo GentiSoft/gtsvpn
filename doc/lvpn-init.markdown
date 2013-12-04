@@ -7,7 +7,7 @@ Los nodos se guardan en el directorio $LVPN\_DIR/nodos/
     -i  Instalar al finalizar (requiere root)
     -f  Forzar la creación de un nodo
     -p  Número de puerto (655)
-    -l  IP en la VPN (se adivina)
+    -l  IP en la VPN (sino se pregunta)
     -s  Anunciar otra subred
     -r  Aceptar otras subredes remotas
     -a  Ubicación pública del nodo (dominio o IP)
