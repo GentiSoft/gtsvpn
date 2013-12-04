@@ -14,12 +14,12 @@ Con el flag `-u` se actualizan los hosts ya agregados.
   -f Reemplazar el host si ya existe
 
 Uso:
-    lvpn add-host [-hfu] nodo-local nodo-remoto1 [nodo-remoto2 ...]
+    gtsvpn add-host [-hfu] nodo-local nodo-remoto1 [nodo-remoto2 ...]
 
 * Agregar los nodos haiti y noanoa a ponape
 
-  lvpn add-host ponape haiti noanoa
+  gtsvpn add-host ponape haiti noanoa
 
 * Actualizar los nodos
 
-  lvpn add-host -u ponape
+  gtsvpn add-host -u ponape

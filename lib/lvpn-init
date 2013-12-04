@@ -22,6 +22,8 @@ subnetup=false
 verbose=false
 force=false
 
+localnet=""
+
 # Encuentra una IP libre entre los archivos de host
 get_ip() {
 # Las subnets encontradas
@@ -39,6 +41,8 @@ get_ip() {
         error "Este rango está agotado"
         return 1
     fi
+
+
 
 # Hasta que encontremos una IP libre elegir el cuarto octeto al azar
     until [ -n "${ip}" ]; do
@@ -63,6 +67,28 @@ get_ip() {
 
     $verbose && msg "Obtenida IP libre en %s intentos" ${tries}
     echo "${ip}"
+    return 0
+}
+
+ask_ip() {
+
+    local valid=0
+    local tmpip=""
+
+    while [ $valid -eq 0 ]; do
+        read -p "Ip del nodo? 10.26." tmpip
+
+        tmpip=$(echo $tmpip | grep -e "^\([0-9]\{,2\}\|1[0-9]\{2\}\|2[0-4][0-9]\|25[0-5]\)\.\([1-9]\|[0-9]\{2\}\|1[0-9]\{2\}\|2[0-4][0-9]\|25[0-4]\)$")
+
+        if [ -z $tmpip ]; then
+            echo "Ip no valida, vuelva a intentarlo"
+        else 
+            valid=1
+        fi
+
+    done
+
+    localnet="10.26.${tmpip}"
     return 0
 }
 
@@ -124,7 +150,9 @@ fi
 
 $verbose && msg "Determinando la IP del nodo..."
 if [ -z "${localnet}" ] ; then
-    localnet=$(get_ip)
+    ask_ip
+
+    echo "La ip es $localnet"
 
     if [ $? -ne 0 ]; then
         fatal_error "No se pudo determinar una IP para este nodo"
